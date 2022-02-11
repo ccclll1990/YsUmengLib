@@ -30,16 +30,16 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
 //    api files('libs/openDefault-10.10.0.aar')
     // 基础组件库依赖(必须)
-    api 'com.umeng.umsdk:common:9.4.2'
+    api 'com.umeng.umsdk:common:9.4.7'
     api 'com.umeng.umsdk:utdid:1.5.2.1'
 
     // 友盟统计SDK
-    api 'com.umeng.umsdk:asms:1.4.1' //必选
+    api 'com.umeng.umsdk:asms:1.5.0' //必选
     // 友盟错误分析 start
-    api 'com.umeng.umsdk:apm:1.4.2' //// 错误分析升级为独立SDK，看crash数据请一定集成，可选
+    api 'com.umeng.umsdk:apm:1.5.2' //// 错误分析升级为独立SDK，看crash数据请一定集成，可选
 
     //友盟Push相关依赖（必须）
-    api 'com.umeng.umsdk:push:6.4.0'
+    api 'com.umeng.umsdk:push:6.5.0'
 //    api 'com.umeng.umsdk:alicloud-httpdns:1.3.2.3'
 //    api 'com.umeng.umsdk:alicloud-utils:2.0.0'
 //    api 'com.umeng.umsdk:alicloud_beacon:1.0.5'
@@ -51,8 +51,8 @@ dependencies {
     // 友盟分享 已在lib内添加
     // 微信QQ在分享7.1.4SDK及以上适配方案 https://developer.umeng.com/docs/128606/detail/200753
     //https://developer.umeng.com/docs/128606/detail/193911 更新指南(在这查看最新版 版本号)
-    api 'com.tencent.tauth:qqopensdk:3.53.0'
-    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'
+//    api 'com.tencent.tauth:qqopensdk:3.53.0'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0'
 
     // https://developer.umeng.com/docs/128606/detail/193879
     // 近期由于新浪线上服务器不稳定的原因，在线集成新浪微博依赖库implementation ‘com.sina.weibo.sdk:core:10.10.0:openDefaultRelease@aar’ 方式容易失败，
