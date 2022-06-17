@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 146
-        versionName "1.4.6"
+        versionCode 150
+        versionName "1.5.0"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -40,6 +40,8 @@ dependencies {
 
     //友盟Push相关依赖（必须）
     api 'com.umeng.umsdk:push:6.5.2'
+    api 'com.umeng.umsdk:agoo_aranger:1.0.6'
+
 //    api 'com.umeng.umsdk:alicloud-httpdns:1.3.2.3'
 //    api 'com.umeng.umsdk:alicloud-utils:2.0.0'
 //    api 'com.umeng.umsdk:alicloud_beacon:1.0.5'
