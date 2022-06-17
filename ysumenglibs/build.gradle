@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 141
-        versionName "1.4.1"
+        versionCode 146
+        versionName "1.4.6"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -30,16 +30,16 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
 //    api files('libs/openDefault-10.10.0.aar')
     // 基础组件库依赖(必须)
-    api 'com.umeng.umsdk:common:9.4.7'
+    api 'com.umeng.umsdk:common:9.5.0'
     api 'com.umeng.umsdk:utdid:1.5.2.1'
 
     // 友盟统计SDK
-    api 'com.umeng.umsdk:asms:1.5.0' //必选
+    api 'com.umeng.umsdk:asms:1.6.4' //必选
     // 友盟错误分析 start
-    api 'com.umeng.umsdk:apm:1.5.2' //// 错误分析升级为独立SDK，看crash数据请一定集成，可选
+    api 'com.umeng.umsdk:apm:1.6.4' //// 错误分析升级为独立SDK，看crash数据请一定集成，可选
 
     //友盟Push相关依赖（必须）
-    api 'com.umeng.umsdk:push:6.5.0'
+    api 'com.umeng.umsdk:push:6.5.2'
 //    api 'com.umeng.umsdk:alicloud-httpdns:1.3.2.3'
 //    api 'com.umeng.umsdk:alicloud-utils:2.0.0'
 //    api 'com.umeng.umsdk:alicloud_beacon:1.0.5'
