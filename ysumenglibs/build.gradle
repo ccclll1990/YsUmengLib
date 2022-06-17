@@ -34,7 +34,7 @@ dependencies {
     api 'com.umeng.umsdk:utdid:1.5.2.1'
 
     // 友盟统计SDK
-    api 'com.umeng.umsdk:asms:1.6.4' //必选
+    api 'com.umeng.umsdk:asms:1.6.3' //必选
     // 友盟错误分析 start
     api 'com.umeng.umsdk:apm:1.6.4' //// 错误分析升级为独立SDK，看crash数据请一定集成，可选
 
