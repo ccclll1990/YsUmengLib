@@ -9,7 +9,7 @@
         <package android:name="com.sina.weibo" />         <!--      //指定微博包名-->
         <package android:name="com.qzone" />                <!--    //指定QQ空间包名-->
     </queries>
-    
+
     <application android:usesCleartextTraffic="true">
         <uses-library
             android:name="org.apache.http.legacy"
@@ -20,44 +20,6 @@
             android:name="com.taobao.accs.internal.AccsJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:process=":channel" />
-
-        <receiver
-            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
-            android:exported="false" />
-
-        <service
-            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE">
-            <intent-filter>
-                <action android:name="com.umeng.messge.registercallback.action" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.umeng.message.enablecallback.action" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.umeng.message.disablecallback.action" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.umeng.message.message.handler.action" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.umeng.message.message.sendmessage.action" />
-            </intent-filter>
-        </service>
-
-        <service
-            android:name="com.umeng.message.UmengDownloadResourceService"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <provider
-            android:name="com.umeng.message.provider.MessageProvider"
-            android:authorities="${applicationId}.umeng.message"
-            android:exported="false">
-            <grant-uri-permission android:pathPattern=".*" />
-        </provider>
-
 
         <service
             android:name="com.taobao.accs.ChannelService"
@@ -81,23 +43,12 @@
             android:name="org.android.agoo.accs.AgooService"
             android:exported="false"
             tools:replace="android:exported" />
-        <service
-            android:name="com.umeng.message.UmengIntentService"
-            android:exported="false"
-            tools:replace="android:exported" />
-        <service
-            android:name="com.umeng.message.XiaomiIntentService"
-            android:exported="false"
-            tools:replace="android:exported" />
 
         <receiver
             android:name="com.taobao.agoo.AgooCommondReceiver"
             android:exported="false"
             tools:replace="android:exported" />
-        <service
-            android:name="com.umeng.message.UmengMessageIntentReceiverService"
-            android:exported="false"
-            tools:replace="android:exported" />
+
 
     </application>
 
@@ -107,7 +58,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
