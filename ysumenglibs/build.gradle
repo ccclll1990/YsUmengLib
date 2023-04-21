@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 168
-        versionName "1.6.8"
+        versionCode 170
+        versionName "1.7.0"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -31,7 +31,7 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
 //    api files('libs/openDefault-10.10.0.aar')
     // 基础组件库依赖(必须)
-    api 'com.umeng.umsdk:common:9.5.6'  // v9.5.4  2022-11-29
+    api 'com.umeng.umsdk:common:9.5.8'  // v9.5.8  2022-04-20
     api 'com.umeng.umsdk:utdid:1.5.2.1'
 
     // 友盟统计SDK
